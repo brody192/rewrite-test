@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
     return {
       beforeFiles: [
         {
-          source: "/about",
-          destination: "/secret",
+          source: "/hello",
+          destination: process.env.REWRITE_DESTINATION!,
         },
       ],
     };
